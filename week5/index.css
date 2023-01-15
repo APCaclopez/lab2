@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+.aboutcont {
+  color: white;
+  font-family: consolas;
+  text-align:left;
+  margin-left:100px;
+}
+strong {
+  color: white;
+  font-family: consolas;
+  text-align:center;
+}
+h1 {
+  color: white;
+  font-family: century gothic;
+  border-bottom-style: solid;
+  text-align:center;
+}
+.homegreet {
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size:45px;
+  text-align:center;
+  padding-top:180px;
+}
+blockquote {
+	color: white;
+	font-family: futara;
+	font-size: 100%;
+	text-align:center;
+}
+
+.intro {
+	font-family: 'Roboto Mono', monospace;
+	text-align:center;
+	color: white;
+}
+
+.homebg {
+	background-image:url('./images/bg4.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.aboutbg {
+	background-image:url('./images/bg5.png');
+	background-position: center;
+	background-size: cover;
+}
+
+.overlay {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(182, 182, 180, .15);
+}
+
+.container {
+	width: 85%;
+	margin: 0 auto;
+}
+
+.logo {
+	float: left;
+	padding: 10px 0;
+}
+
+.header2 {
+	font-size: 200%;
+	color: white;
+	margin-left:100px;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.subcontent {
+	font-size: 100%;
+	color: white;
+	font-family: 'Roboto Mono', monospace;
+	margin-left:120px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav {
+	float: right;
+}
+
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	font-family: 'Roboto Mono', monospace;
+	color: white;
+	display: inline-block;
+	margin-left: 75px;
+	padding-top: 30px;
+	position: relative;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	text-transform: lowercase;
+	fonts-size: 14px;
+}
+
+nav a:hover {
+	color: #E238EC;
+}
+
+nav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	width: 100%;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	width: 0;
+	transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+	width: 100%
+}
+	
