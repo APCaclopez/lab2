@@ -41,12 +41,14 @@ blockquote {
 	background-image:url('./images/bg4.jpg');
 	background-position: center;
 	background-size: cover;
+	background-attachment:fixed;
 }
 
 .aboutbg {
 	background-image:url('./images/bg5.png');
 	background-position: center;
 	background-size: cover;
+	background-attachment:fixed;
 }
 
 .overlay {
