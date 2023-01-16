@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>AK</title>
-<link rel="icon" type="image/png" href="./images/crown_icon.png">
-<link rel="stylesheet" href="index.css">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
+	<title>AK</title>
+	<link rel="icon" type="image/png" href="./images/crown_icon.png">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
+	<script>
+		function displayDate() {
+			document.getElementById('showDate').innerHTML = Date();
+		}
+	</script>
 </head>
 
 <body class="homebg">
 	<header>
-	<div class="container">
-	
-	<a href="index.html"><img src="./images/logo1.png" width="10%" height=auto class="logo"></a>
-		<nav>
-			<ul>
-				<li><a href="about.html">About</a></li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="resources.html">Resources</a></li>
-			</ul>
-		</nav>
-	</div>
+		<div class="container">
+
+			<a href="index.html"><img src="./images/logo1.png" width="10%" height=auto class="logo"></a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="resources.html">Resources</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 	
 	<h2 class="homegreet">i am aliyah kirstie.</h2>
 	<div class="intro">
-	<p>comsci student. gamer. music lover.</p>
-	<p>old soul. film enthusiast. linguaphile.</p>
-	<br>
-	<p>"love yourself first and everything falls into line." -lucille ball</p>
+		<p>comsci student. gamer. music lover.</p>
+		<p>old soul. film enthusiast. linguaphile.</p>
+		<br>
+		<p>"love yourself first and everything falls into line." -lucille ball</p>
 	</div>
 
-		
+
+	<footer id="resfoot">
+		<div class="row">
+			<div class="column">
+				<button type="button" class="neon-button" onclick="displayDate()">in what year are we?</button>
+				<p id="showDate"></p>
+			</div>
+			<div class="column">
+				<p class="footcont">san junipero inspired.</p>
+			</div>
+		</div>
+	</footer>
+
 
 </body>
 </html>
