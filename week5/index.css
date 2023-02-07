@@ -45,7 +45,7 @@ h1 {
 .homegreet {
   color: white;
   font-family: 'Roboto Mono', monospace;
-  font-size:45px;
+  font-size:28px;
   text-align:center;
   padding-top:180px;
 }
@@ -246,4 +246,14 @@ nav a:hover::before {
 .neon-button:hover::after,
 .neon-button:focus::after {
   opacity: 1;
+}
+
+span {
+	animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+	50%{
+		opacity: 0;
+	}
 }
