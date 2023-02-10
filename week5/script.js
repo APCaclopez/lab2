@@ -19,3 +19,13 @@ window.addEventListener("load", typewriter)
 function portfolioAlert() {
 	alert('This section is not available yet.');
 }
+
+// Create an object:
+const description = {
+  desc_one: "old soul",
+  desc_two: "film enthusiast",
+  desc_three: "linguaphile"
+};
+
+// Display some data from the object:
+document.getElementById('desc').innerHTML = description["desc_one"] + ". " + description["desc_two"] + ". " + description["desc_three"] + ".";

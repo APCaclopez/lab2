@@ -104,8 +104,8 @@ h1 {
 	font-size: 21px;
 	color: white;
 	font-family: 'Anaheim', sans-serif;
-	margin-left:160px;
-	margin-right:100px;
+	margin-left:200px;
+	margin-right:200px;
 }
 
 .column {
@@ -123,7 +123,6 @@ h1 {
 .footcont {
 	margin-left: 20em;
 }
-
 
 .button {
 	float: none;
