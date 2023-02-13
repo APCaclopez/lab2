@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Roboto+Mono&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Chakra+Petch:wght@700&family=Roboto+Mono&family=Rubik+Mono+One&display=swap');
+
+
+.aboutcont {
+  color: white;
+  font-family: consolas;
+  text-align:left;
+  margin-left:100px;
+}
+strong {
+  color: white;
+  font-family: consolas;
+  text-align:center;
+}
+
+html {
+	height: 100%;
+}
+
+footer {
+	color: white;
+	padding: 3em;
+	margin-top: auto;
+	font-family: 'Roboto Mono', monospace;
+	margin-left: 10em;
+}
+
+#resfoot {
+	margin-left: 15em;	
+
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+h1 {
+  color: white;
+  font-family: century gothic;
+  border-bottom-style: solid;
+  text-align:center;
+}
+
+.homegreet {
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size:28px;
+  text-align:center;
+  padding-top:180px;
+}
+
+.intro {
+	font-family: 'Roboto Mono', monospace;
+	text-align:center;
+	color: white;
+}
+
+.homebg {
+	background-image:url('./images/bg4.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment:fixed;
+}
+
+.aboutbg {
+	background-image:url('./images/bg5.png');
+	background-position: center;
+	background-size: cover;
+	background-attachment:fixed;
+}
+
+.overlay {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(182, 182, 180, .15);
+}
+
+.container {
+	width: 85%;
+	margin: 0 auto;
+}
+
+.logo {
+	float: left;
+	padding: 10px 0;
+}
+
+.header2 {
+	font-size: 200%;
+	color: white;
+	text-align: center;
+	font-family: 'Chakra Petch', sans-serif;
+}
+
+.subcontent {
+	font-size: 21px;
+	color: white;
+	font-family: 'Anaheim', sans-serif;
+	margin-left:200px;
+	margin-right:200px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footcont {
+	margin-left: 20em;
+}
+
+.button {
+	float: none;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a {
+	color: white;
+}
+
+a:hover {
+	color: #93FFE8;
+}
+
+nav {
+	float: right;
+}
+
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	font-family: 'Roboto Mono', monospace;
+	color: white;
+	display: inline-block;
+	margin-left: 75px;
+	padding-top: 30px;
+	position: relative;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	text-transform: lowercase;
+	fonts-size: 14px;
+}
+
+nav a:hover {
+	color: #E238EC;
+}
+
+nav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	width: 100%;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	width: 0;
+	transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+	width: 100%
+}
+
+:root {
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+	
+.neon-button {
+	font-family: 'Roboto Mono', monospace;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-neon);
+  border: var(--clr-neon) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+
+  position: relative;
+  left: -170px;
+}
+
+
+.neon-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  opacity: 0;
+  background-color: var(--clr-neon);
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+.neon-button:hover,
+.neon-button:focus {
+  color: var(--clr-bg);
+  text-shadow: none;
+}
+
+.neon-button:hover::before,
+.neon-button:focus::before {
+  opacity: 1;
+}
+.neon-button:hover::after,
+.neon-button:focus::after {
+  opacity: 1;
+}
+
+span {
+	animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+	50%{
+		opacity: 0;
+	}
+}
