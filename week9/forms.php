@@ -10,7 +10,7 @@
 	</style>
 </head>
 
-<body class="homebg">
+<body class="aboutbg">
 	<header>
 		<div class="container">
 
@@ -85,10 +85,11 @@
 	?>
 
 	<div class="header2">
-		<h2>PHP Form Validation Example</h2>
+		<h2>Guest Form</h2>
 	</div>
 
 	<div class="subcontent">
+		<p>If you want to see the entries, click<a href="guests.php"> HERE.</a></p>
 		<p><span class="error">* required field</span></p>
 		<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
 			Name: <input type="text" name="name" value="<?php echo $name;?>">
@@ -110,6 +111,7 @@
 			<br><br>
 			<input type="submit" name="submit" value="Submit">  
 		</form>
+
 
 		<?php
 		echo "<h2>Your Input:</h2>";
