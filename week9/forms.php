@@ -131,10 +131,10 @@
 		if ($_SERVER["REQUEST_METHOD"] == "POST") 
 		{
 
-			$servername = "localhost";
-			$username = "root";
-			$password = "";
-			$dbname = "test";
+			$servername = "192.168.150.213";
+			$username = "webprogss211";
+			$password = "fancyR!ce36";
+			$dbname = "webprogss211";
 
 	// Create connection
 			$conn = new mysqli($servername, $username, $password, $dbname);
@@ -144,7 +144,7 @@
 			}
 
 			// sql to create table
-			$table = "CREATE TABLE IF NOT EXISTS MyGuests (
+			$table = "CREATE TABLE IF NOT EXISTS aclopez_myguests (
 			id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 			name VARCHAR(50) NOT NULL,
 			email VARCHAR(50),
@@ -154,7 +154,7 @@
 			reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 			)";
 
-			$table = "INSERT INTO MyGuests (name, email, website, comment, gender)
+			$table = "INSERT INTO aclopez_myguests (name, email, website, comment, gender)
 			VALUES ('$name', '$email', '$website', '$comment', '$gender')";
 
 			if ($conn->query($table) === TRUE) {
