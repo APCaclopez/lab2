@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 $table = "CREATE TABLE aclopez_myguests (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(50) NOT NULL,
-email VARCHAR(50),
+email VARCHAR(50) NOT NULL,
 website VARCHAR(150),
 comment TEXT,
 gender VARCHAR(10),
@@ -23,7 +23,7 @@ reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 
 if ($conn->query($sql) === TRUE) {
-  echo "Table aclopez_myguests created successfully";
+  echo "Table MyGuests created successfully";
 } else {
   echo "Error creating table: " . $conn->error;
 }
