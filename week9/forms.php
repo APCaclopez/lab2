@@ -154,10 +154,10 @@
 			reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 			)";
 
-			$table = "INSERT INTO aclopez_myguests (name, email, website, comment, gender)
+			$insert = "INSERT INTO aclopez_myguests (name, email, website, comment, gender)
 			VALUES ('$name', '$email', '$website', '$comment', '$gender')";
 
-			if ($conn->query($table) === TRUE) {
+			if ($conn->query($insert) === TRUE) {
 				echo "New record created successfully";
 			} else {
 				echo "Error: " . $table . "<br>" . $conn->error;
