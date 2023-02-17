@@ -22,8 +22,8 @@ gender VARCHAR(10),
 reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 
-if ($conn->query($sql) === TRUE) {
-  echo "Table MyGuests created successfully";
+if ($conn->query($table) === TRUE) {
+  echo "Table aclopez_myguests created successfully";
 } else {
   echo "Error creating table: " . $conn->error;
 }
