@@ -27,7 +27,7 @@
 	</header>
 
 	<div class="header2">
-		<h2>GUEST LIST</h2>
+		<h2>guest list</h2>
 	</div>
 
 	<div class="subcontent">

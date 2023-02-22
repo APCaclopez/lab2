@@ -85,7 +85,7 @@
 	?>
 
 	<div class="header2">
-		<h2>Guest Form</h2>
+		<h2>guest form</h2>
 	</div>
 
 	<div class="subcontent">
